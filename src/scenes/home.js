@@ -1,30 +1,21 @@
 import React from 'react';
-import {SafeAreaView, Text, StatusBar, ScrollView, View} from 'react-native';
+import {SafeAreaView, StatusBar, View} from 'react-native';
 import Section from '../components/section';
+import CustomerDetails from '../components/customerDetails';
+import {FlatList} from 'react-native-gesture-handler';
 
 const Home = () => {
-  return (
-    <SafeAreaView>
-      <StatusBar barStyle="dark-content" />
-      <ScrollView contentInsetAdjustmentBehavior="automatic">
-        <View
-          style={{
-            backgroundColor: '#FFFFFF',
-          }}>
-          <Section title="Customer Listing" />
-          <View
-            style={{
-              flexDirection: 'row',
-              height: 100,
-              paddingHorizontal: 20,
-            }}>
-            <View style={{backgroundColor: 'blue', flex: 0.3}} />
+  var userData = require('../utils/data/userData.json');
 
-            <Text style={{paddingHorizontal: 20}}>Hello World!</Text>
-          </View>
-        </View>
-      </ScrollView>
-    </SafeAreaView>
+  return (
+    <View style={{flex: 1}}>
+      <Section title="Customer Listing" />
+      <FlatList
+      style={{flexDirection: 'column'}}
+        data={userData}
+        renderItem={({item}) => <CustomerDetails user={item} />}
+      />
+    </View>
   );
 };
 
