@@ -4,6 +4,7 @@ import Section from '../components/section';
 import CustomerDetails from '../components/customerDetails';
 import {FlatList} from 'react-native-gesture-handler';
 
+TODO: 'Add floating button'
 const Home = () => {
   var userData = require('../utils/data/userData.json');
 
