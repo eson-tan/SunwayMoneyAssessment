@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "name": "Eson",
+        "dob": "13-04-2001",
+        "icNo": "123456789065",
+        "registerDate": "25-5-2019",
+        "address": "5, Jalan Universiti, Bandar Sunway, 47500 Petaling Jaya, Selangor"
+    },
+    {
+        "id": 2,
+        "name": "Kelly",
+        "dob": "07-05-1969",
+        "icNo": "684738291029",
+        "registerDate": "10-01-2011",
+        "address": "5, Jalan Universiti, Bandar Sunway, 47500 Petaling Jaya, Selangor"
+    },
+    {
+        "id": 3,
+        "name": "Riley",
+        "dob": "28-01-1995",
+        "icNo": "456789123456",
+        "registerDate": "04-03-2021",
+        "address": "5, Jalan Universiti, Bandar Sunway, 47500 Petaling Jaya, Selangor"
+    },
+    {
+        "id": 4,
+        "name": "May",
+        "dob": "03-01-1980",
+        "icNo": "234567876543",
+        "registerDate": "20-09-2019",
+        "address": "5, Jalan Universiti, Bandar Sunway, 47500 Petaling Jaya, Selangor"
+    },
+    {
+        "id": 5,
+        "name": "Peter",
+        "dob": "22-06-1970",
+        "icNo": "543267875432",
+        "registerDate": "05-5-2015",
+        "address": "5, Jalan Universiti, Bandar Sunway, 47500 Petaling Jaya, Selangor"
+    }
+]
