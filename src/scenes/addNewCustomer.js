@@ -1,13 +1,11 @@
-import react from 'react';
 import React from 'react';
 import {Text, View, Button} from 'react-native';
 import {TextInput} from 'react-native-gesture-handler';
 import styles from '../styles/styles';
 import CustomDatePicker from '../utils/customDatePicker';
 import getDate from '../utils/dateFormatter';
-import { createStackNavigator } from 'react-navigation-stack';
 
-class NewCustomer extends react.Component {
+class NewCustomer extends React.Component {
   constructor() {
     super();
     this.state = {
@@ -38,8 +36,6 @@ class NewCustomer extends react.Component {
     const userData = require('../utils/data/userData.json');
     userData.push(this.state);
     // console.log(userData);
-
-    
   }
 
   render() {
@@ -78,6 +74,7 @@ class NewCustomer extends react.Component {
           title="Add New Customer"
           onPress={() => {
             this.submit();
+            this.props.navigation.goBack();
           }}
         />
       </View>

@@ -4,23 +4,20 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import NewCustomer from './src/scenes/addNewCustomer';
 import {NavigationContainer} from '@react-navigation/native';
 
-const Stack = createNativeStackNavigator();
+import {enableScreens} from 'react-native-screens';
 
-function AppStack() {
-  return (
-    <Stack.Navigator>
-      <Stack.Screen name="Home" component={Home} />
-      <Stack.Screen name="NewCustomer" component={NewCustomer} />
-    </Stack.Navigator>
-  )
-}
+enableScreens();
+
+const Stack = createNativeStackNavigator();
 
 export default function App() {
   return (
     <NavigationContainer>
-      <AppStack />
+      <Stack.Navigator initialRouteName="Home">
+        <Stack.Screen name="Home" component={Home} />
+        <Stack.Screen name="NewCustomer" component={NewCustomer} />
+      </Stack.Navigator>
     </NavigationContainer>
   );
-};
+}
 
-// export default App;

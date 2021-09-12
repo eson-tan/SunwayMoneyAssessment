@@ -33,6 +33,11 @@ const styles = StyleSheet.create({
     alignSelf: 'stretch',
     color: '#199187',
   },
+  button: {
+    alignItems: "center",
+    backgroundColor: "#DDDDDD",
+    padding: 10
+  },
 });
 
 export default styles;
